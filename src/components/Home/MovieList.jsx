@@ -29,7 +29,7 @@ const MovieList = ({ movies, filter }) => {
 
     // Rendu du composant
     return (
-        <div style={{ minHeight: '47rem' }} className=" container d-felx justify-content-center align-items-center">
+        <div style={{ minHeight: '47rem' }} className=" container ">
                 <div className='row'>
                     {/* Afficher soit les cartes de films, soit le composant Nodata si la liste des films est vide ou pas. */}
                     { isEmpty ? filteredMovies.map((movie) => (<MovieCard key={movie.id} {...movie} />)) : <Nodata/>}

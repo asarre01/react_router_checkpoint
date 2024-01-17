@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Définition du composant PageNotFound
 export default function PageNotFound() {
     return (
-        <div className=' d-flex flex-column vw-100 vh-100 justify-content-center align-items-center'>
+        <div className='d-flex flex-column vw-100 vh-100 justify-content-center align-items-center'>
             <div>
                 {/* Image indiquant l'absence de données */}
                 <img src="Nodata-bro.png" alt="No Data" style={{ width: '35rem', minHeight: '35rem' }}/>
             </div>
+            {/* Bouton de redirection vers la page d'accueil */}
             <Link to="/" style={{ textDecoration: 'none' }}>
                 <Button variant="dark" size="lg">Accueil</Button>
             </Link>
         </div>
-    )
+    );
 }

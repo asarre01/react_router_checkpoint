@@ -19,7 +19,7 @@ function Home({movies, setMovies}) {
 	};
 
 	return (
-		<div className="">
+		<div>
             {/* Composant de la barre de navigation avec la possibilité de filtrer les films */}
 			<NavBarCine onFilterChange={handleFilterChange} movies={movies} />
 
